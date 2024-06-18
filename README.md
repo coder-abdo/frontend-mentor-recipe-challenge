@@ -22,12 +22,12 @@ this is the overview section. It's where you'll put a description of the challen
 
 ### Screenshot
 
-![screenshot](./assets/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [frontend mentor solution](https://your-solution-url.com)
-- Live Site URL: [github pages](https://your-live-site-url.com)
+- Solution URL: [frontend mentor solution](https://www.frontendmentor.io/solutions/recipe-page-37s8mShEsy)
+- Live Site URL: [github pages](https://coder-abdo.github.io/frontend-mentor-recipe-challenge/)
 
 ## My process
 
