@@ -1,0 +1,222 @@
+/* font */
+@font-face {
+  font-family: "outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "young-serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* base style */
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: var(--Eggshell);
+  padding: 5rem 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3 {
+  font-family: "young-serif";
+}
+.subtitle {
+  color: var(--Nutmeg);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.recipe__ingredients,
+.recipe__instructions {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+/* recipe */
+.recipe {
+  max-width: 70rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--White);
+  margin: 0 auto;
+  font-family: "outfit";
+  border-radius: 2rem;
+}
+/* image */
+.recipe__image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+/* main title */
+.recipe__title {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+/* recipe description */
+.recipe__description {
+  margin-bottom: 3rem;
+}
+/* preparation */
+.recipe__preparation-time {
+  background-color: var(--Rose-White);
+  padding: 2rem 0;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+.preparation-time__title {
+  font-size: 2rem;
+  font-family: "outfit";
+  margin-bottom: 1.5rem;
+  color: var(--Dark-Raspberry);
+}
+.preparation-time__list {
+  font-size: 1.5rem;
+  list-style-type: square;
+  color: var(--Dark-Raspberry);
+}
+
+.preparation-time__item:is(:not(:last-child)) {
+  margin-bottom: 1rem;
+}
+.preparation-time__item strong {
+  font-weight: 700;
+  margin-right: 0.5rem;
+  color: black;
+}
+.preparation-time__item time {
+  font-weight: 400;
+  color: black;
+}
+/* ingredients */
+.recipe__ingredients {
+  margin-bottom: 2rem;
+}
+.ingredients__title {
+  margin-bottom: 1.5rem;
+}
+.ingredients__list {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  color: var(--Dark-Raspberry);
+  list-style-type: square;
+}
+.ingredients__item:is(:not(:last-child)) {
+  margin-bottom: 1rem;
+}
+.ingredients__item {
+  padding-left: 1.5rem;
+}
+.ingredients__item span {
+  color: black;
+}
+/* instructions */
+.recipe__instructions {
+  padding-top: 2rem;
+}
+.instructions__list {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  list-style-type: decimal;
+  color: var(--Dark-Raspberry);
+}
+.instructions__item {
+  padding-left: 1.5rem;
+}
+.instructions__list span {
+  color: black;
+}
+.instructions__highlight {
+  font-weight: 700;
+  color: black;
+  margin-right: 0.5rem;
+}
+/* nutritions */
+.recipe__nutrients {
+  padding-top: 2rem;
+}
+.nutrients__description {
+  margin-top: 2rem;
+}
+.nutrients__list {
+  font-size: 1.8rem;
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.nutrients__item {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.nutrients__item:is(:not(:last-child)) {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+.nutrients__item td {
+  flex-basis: 50%;
+}
+.nutrients__item__value {
+  color: var(--Nutmeg);
+  font-weight: 700;
+  text-align: center;
+}
+/* attribution */
+.attribution {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* mobile design */
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+
+  .recipe {
+    padding: 1rem;
+  }
+}
